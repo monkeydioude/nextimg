@@ -9,6 +9,7 @@ VOLUME .:/app
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./package.json /package.json
 COPY ./index.js /index.js
+COPY ./.gitignore /.gitignore
 
 
 ENTRYPOINT [ "/entrypoint.sh" ]

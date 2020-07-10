@@ -8,6 +8,7 @@ cd /app
 
 if [ ! -f "package.json" ]; then
     echo "[INFO] package.json doesn't exist = new project."
+    mv /.gitignore .
 
     echo "[INFO] copying base package.json."
     mv /package.json .
