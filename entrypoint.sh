@@ -1,10 +1,15 @@
 #!/bin/bash
 
+cd /app
+
+if [ "$CMD" ]; then
+    $CMD
+    exit
+fi
+
 if [ -z $TYPESCRIPT ]; then
     TYPESCRIPT=1
 fi
-
-cd /app
 
 if [ ! -f "package.json" ]; then
     echo "[INFO] package.json doesn't exist = new project."
