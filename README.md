@@ -7,10 +7,6 @@
 This image behaves as follows:
 
 ```
-Does ENV Var `CMD` exist ? Y [
-    > execute CMD
-    > exit
-]
 Project does NOT exist ? Y [
     > add `.gitignore`
         node_modules/

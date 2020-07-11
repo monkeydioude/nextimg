@@ -2,11 +2,6 @@
 
 cd /app
 
-if [ "$CMD" ]; then
-    $CMD
-    exit
-fi
-
 if [ -z $TYPESCRIPT ]; then
     TYPESCRIPT=1
 fi

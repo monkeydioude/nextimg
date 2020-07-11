@@ -6,6 +6,8 @@ EXPOSE 3000
 
 VOLUME .:/app
 
+WORKDIR /app
+
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./package.json /package.json
 COPY ./index.js /index.js
